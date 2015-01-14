@@ -13,6 +13,8 @@ install:
   # Add ansible.cfg to pick up roles path.
   - "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
 
+  # Install dependencies
+  - 'ansible-galaxy install willshersystems.apt'
 
 script:
   # Check the roles syntax
@@ -28,4 +30,5 @@ script:
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
 
-  - dpkg -l nodejs
+  - 'dpkg --status nodejs >/dev/null'
+  - 'nodejs --version'
