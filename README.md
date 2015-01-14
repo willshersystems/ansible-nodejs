@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/willshersystems/ansible-nodejs.svg?branch=master)](https://travis-ci.org/willshersystems/ansible-nodejs)
+[![Ansible Galaxy](http://img.shields.io/badge/galaxy-willshersystems.nodejs-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2580)
+
 nodejs
 ======
 
@@ -16,8 +19,7 @@ None
 Dependencies
 ------------
 
-None
-
+- willshersystems.apt
 
 Example Playbook
 ----------------
